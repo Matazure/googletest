@@ -173,6 +173,7 @@ INSTANTIATE_TYPED_TEST_CASE_P(My, FooTest, MyTypes);
    private: \
     typedef CaseName<gtest_TypeParam_> TestFixture; \
     typedef gtest_TypeParam_ TypeParam; \
+   public: \
     virtual void TestBody(); \
   }; \
   bool gtest_##CaseName##_##TestName##_registered_ GTEST_ATTRIBUTE_UNUSED_ = \
